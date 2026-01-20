@@ -20,8 +20,8 @@ jobs:
 
     - name: Build & Push Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-k8s-prod:latest .
-        docker push ${{ secrets.DOCKER_USERNAME }}/flask-k8s-prod:latest
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/full-stack:latest .
+        docker push ${{ secrets.DOCKER_USERNAME }}/full-stack:latest
 
     - name: Deploy to Kubernetes
       run: |

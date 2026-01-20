@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: <dockerhub-username>/flask-k8s-prod:1.0
+          image: <dockerhub-username>/full-stack:1.0
           ports:
             - containerPort: 5000
           envFrom:
